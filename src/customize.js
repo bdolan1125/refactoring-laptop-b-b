@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'reactDOM'
 import { Component } from 'react'
-import Os from '/os'
-import Gpu from '/gpu'
-import Cpu from '/cpu'
-import Display from '/display'
+import Header from './header'
+import Os from './os'
+import Gpu from './gpu'
+import Cpu from './cpu'
+import Display from './display'
 import { render } from 'react-dom'
 
 export default class  extends Component {
@@ -58,6 +59,7 @@ export default class  extends Component {
   render() {
     return(
       <div className='cust-list'>
+        <Header />
         <Os />
         <Gpu />
         <Cpu />
